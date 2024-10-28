@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import sidebarConfig from '../docs/sidebar.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,21 +9,28 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: '前端开发', link: '/docs/前端开发/' },
+      { text: '后端开发', link: '/docs/后端开发/' },
+      { text: '上位机开发', link: '/docs/上位机开发/' },
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    outlineTitle:'当前页大纲',
+
+    outline: [1,3],
+
+    // sidebar: [
+    //   {
+    //     text: '前端开发',
+    //     items: [
+    //       { text: 'HTML', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' },
+    //     ],
+    //   },
+    // ],
+    sidebar: sidebarConfig,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/AlexJTech' },
     ],
 
     footer: {

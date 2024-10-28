@@ -1,0 +1,87 @@
+{
+  "/docs/上位机开发/": [
+    {
+      "text": "上位机开发",
+      "items": [
+        {
+          "text": "WPF 入门",
+          "link": "/docs/上位机开发/WPF 入门"
+        },
+        {
+          "text": "上位机基础",
+          "items": [
+            {
+              "text": "C Sharp编程基础 01",
+              "link": "/docs/上位机开发/上位机基础/C Sharp编程基础 01"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "/docs/前端开发/": [
+    {
+      "text": "前端开发",
+      "items": [
+        {
+          "text": "CSS",
+          "link": "/docs/前端开发/CSS"
+        },
+        {
+          "text": "HTML",
+          "link": "/docs/前端开发/HTML"
+        },
+        {
+          "text": "JS",
+          "link": "/docs/前端开发/JS"
+        },
+        {
+          "text": "Vue",
+          "items": [
+            {
+              "text": "Vue 1 基础知识",
+              "link": "/docs/前端开发/Vue/Vue 1 基础知识"
+            },
+            {
+              "text": "Vue 2 组件",
+              "link": "/docs/前端开发/Vue/Vue 2 组件"
+            },
+            {
+              "text": "Vue 3 常见问题",
+              "link": "/docs/前端开发/Vue/Vue 3 常见问题"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "/docs/后端开发/": [
+    {
+      "text": "后端开发",
+      "items": [
+        {
+          "text": "Django开发",
+          "items": [
+            {
+              "text": "常见问题",
+              "link": "/docs/后端开发/Django开发/常见问题"
+            }
+          ]
+        },
+        {
+          "text": "Java核心开发",
+          "items": [
+            {
+              "text": "1 Java 基础知识概念",
+              "link": "/docs/后端开发/Java核心开发/1 Java 基础知识概念"
+            },
+            {
+              "text": "4 类与对象",
+              "link": "/docs/后端开发/Java核心开发/4 类与对象"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

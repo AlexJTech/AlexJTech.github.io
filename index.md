@@ -11,9 +11,9 @@ hero:
     alt: 背景图
   actions:
     - theme: brand
-      text: 开始阅读
+      text: 建站原因
       link: /#
-    - theme: brand
+    - theme: alt
       text: markdown-examples
       link: /markdown-examples
     - theme: alt
@@ -21,11 +21,11 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 💡 小建议
+    details: 选择永远大于努力
+  - title: 🧗 努力
+    details: 如果做一件事就努力把它做好
+  - title: 🤔 思考
+    details: 学会思考，不要人云亦云
 ---
 
