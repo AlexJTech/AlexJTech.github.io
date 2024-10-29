@@ -74,7 +74,7 @@ HTML 5 之后
 ![](HTML.assets/image-20240320020744780.png)
 详细地址 https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories
 
-## 1 内联元素和块级元素的区别
+## 6.1 内联元素和块级元素的区别
 
 |         块级元素          |          内联元素          |
 | :-------------------: | :--------------------: |
@@ -118,30 +118,30 @@ HTML 5 之后
 # 9 常用知识
 
 
-## 1 HTML 元素显示为文本
+## 9.1 HTML 元素显示为文本
 
-### 1.1 使用 HTML 实体
+### 9.1.1 使用 HTML 实体
 将 `<` 和 `>` 替换为 HTML 实体 `&lt;` 和 `&gt;`，这样浏览器就会将它们当作文本来处理：
 
 ```html
 &lt;div class="g-progress" style="--progress: 50%"&gt;&lt;/div&gt;
 ```
 
-### 1.2 使用 `pre` 标签
+### 9.1.2 使用 `pre` 标签
 如果你不想转换为实体，可以将代码包裹在 `pre` 标签中，并使用 `&lt;` 和 `&gt;` 实体：
 
 ```html
 <pre>&lt;div class="g-progress" style="--progress: 50%"&gt;&lt;/div&gt;</pre>
 ```
 
-### 1.3 使用 `code` 标签
+### 9.1.3 使用 `code` 标签
 你也可以用 `code` 标签来显示代码片段，但仍需将 `<` 和 `>` 转换为实体：
 
 ```html
 <code>&lt;div class="g-progress" style="--progress: 50%"&gt;&lt;/div&gt;</code>
 ```
 
-### 1.4 使用 JavaScript 转义
+### 9.1.4 使用 JavaScript 转义
 如果你在动态内容中插入代码，可以使用 JavaScript 转义：
 
 ```javascript

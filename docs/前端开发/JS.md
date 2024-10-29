@@ -61,7 +61,7 @@ MY_OBJECT.key = "otherValue";
 
 # 4 字面值
 
-## 1 数组字面值
+## 4.1 数组字面值
 
 数组字面值是一个封闭在方括号对 ([]) 中的包含有零个或多个表达式的列表，其中每个表达式代表数组的一个元素。
 ```js
@@ -73,7 +73,7 @@ console.log(a.length); // 1
 
 console.log(a[0]); // 3
 ```
-### 1.1 数组字面值中的多余逗号
+### 4.1.1 数组字面值中的多余逗号
 
 你不必列举数组字面值中的所有元素。若你在同一行中连写两个逗号（,），数组中就会产生一个没有被指定的元素，其初始值是 `undefined`。以下示例创建了一个名为 `fish` 的数组：
 
@@ -83,17 +83,17 @@ var fish = ["Lion", , "Angel"];
 
 
 
-## 2 布尔字面值
+## 4.2 布尔字面值
 
 
 
 
 
-## 3 数字字面值
+## 4.3 数字字面值
 
 
 
-## 4 整数字面值
+## 4.4 整数字面值
 整数可以用十进制（基数为 10）、十六进制（基数为 16）、八进制（基数为 8）以及二进制（基数为 2）表示。
 
 - 十进制整数字面量由一串数字序列组成，且没有前缀 0。
@@ -114,11 +114,11 @@ var fish = ["Lion", , "Angel"];
 
 
 
-## 5 浮点数字面值
+## 4.5 浮点数字面值
 
 
 
-## 6 对象字面值
+## 4.6 对象字面值
 
 
 
@@ -162,14 +162,14 @@ JavaScript 语言有几个顶级的内置函数：
 
 
 
-## 1 私有字段
+## 8.1 私有字段
 
 
 JavaScript 中的私有字段是**硬私有的**。如果类没有实现暴露这些私有字段的方法，也就没有任何机制可以从类外访问它们。这意味着你可以对类的私有字段做任何重构，只要暴露的方法的行为保持不变即可。
 
 
 
-## 2 继承与扩展
+## 8.2 继承与扩展
 
 派生类可以访问父类的所有公共属性。在 JavaScript 中，派生类是通过 [`extends`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/extends) 子句声明的，它指示它扩展自哪个类。
 
@@ -275,7 +275,7 @@ console.log(color instanceof ColorWithAlpha); // true
 
 
 
-## 3 为什么要使用类
+## 8.3 为什么要使用类
 
 因为类引入了一种范式，类是面向对象的一种编程方式。面向对象编程是建立在继承和多态上的。
 
@@ -285,7 +285,7 @@ console.log(color instanceof ColorWithAlpha); // true
 
 
 
-## 1 什么是 Promise 
+## 9.1 什么是 Promise 
 
 `Promise` 是一个代表异步操作最终结果的对象。
 本之上 Promise 是一个函数返回的对象，可以绑定回调函数
@@ -316,7 +316,7 @@ createAudioFileAsync(audioSettings).then(successCallback, failureCallback);
 
 
 
-## 2 Promise 的优势
+## 9.2 Promise 的优势
 
 - 链式回调
 
@@ -446,7 +446,7 @@ DOM 将网页表示为一个树形结构, 每个节点表示网页中的一个�
 
 好的, 我们继续更详细地介绍 DOM 及其使用方式:
 
-## 1 DOM 树结构
+## 10.1 DOM 树结构
 
 DOM 将整个文档表示为一个树形结构, 每个节点代表文档的一部分。主要节点类型包括:
 
@@ -564,7 +564,7 @@ button.addEventListener('click', function(event) {
 总之, DOM 提供了非常丰富和强大的功能, 让我们可以通过 JavaScript 来完全控制网页的内容、结构和行为。无论是操作节点、修改样式还是处理事件, 都需要深入学习和掌握 DOM 相关的 API 和概念。掌握了 DOM, 我们就能够创建出更加动态和交互性强的 Web 应用程序。
 
 
-## 2 常见的 DOM 操作
+## 10.2 常见的 DOM 操作
 
 1. **获取元素**
 
@@ -634,7 +634,7 @@ button.addEventListener('click', function() {
 
 总之, DOM 提供了一种标准化的方式来操作和交互网页中的元素, 是 JavaScript 与网页进行交互的关键接口。通过学习和掌握 DOM, 我们可以创建动态和交互式的网页应用。
 
-## 3 例子
+## 10.3 例子
 
 好的, 我们可以使用 JavaScript 和 DOM 操作来实现一个简单的登录、验证和注销功能。下面是一个示例:
 
@@ -714,7 +714,7 @@ logoutBtn.addEventListener('click', function() {
 
 
 
-## 1 .js
+## 11.1 .js
 
 **传统的 JavaScript 文件**
 
@@ -722,7 +722,7 @@ logoutBtn.addEventListener('click', function() {
 
 
 
-## 2 .mjs
+## 11.2 .mjs
 
 **ES Modules 文件**
 
@@ -739,7 +739,7 @@ logoutBtn.addEventListener('click', function() {
 ```
 
 
-## 3 .cjs
+## 11.3 .cjs
 
 **CommonJS 模块**
 
@@ -751,7 +751,7 @@ logoutBtn.addEventListener('click', function() {
 
 
 
-## 4 总结
+## 11.4 总结
 
 通过对. js、.mjs 和. cjs 三种 JavaScript 文件类型的解析，我们可以发现它们各自具有不同的特点和适用场景。在实际开发中，我们应该根据项目需求和目标环境选择合适的文件类型。同时，为了确保代码的可维护性和可读性，我们还应遵循良好的编码规范和命名约定。
 
